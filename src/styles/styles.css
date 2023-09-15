@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  background-color: #303030;
+  line-height: 1.4;
+}
+
+.container {
+  margin: 0;
+  padding: 2rem 2.5rem;
+}
+
+.hero {
+  text-align: center;
+  height: auto;
+}
+
+.hero h1 {
+  background-image: linear-gradient(90deg, #4d78ef, #709df7, #7ed4fd);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.header {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  background-image: linear-gradient(90deg, #4d78ef, #709df7, #7ed4fd);
+  border: solid .063rem;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+.header span {
+  justify-content: center;
+}
+
+.market ul {
+  padding: 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.market li {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+  list-style: none;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border-top: solid .063rem;
+}
+
+.market span {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  width: 100%;
+}
+
+.market img {
+  height: 2.5rem;
+  width: auto;
+  /* margin: 0; */
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  place-items: center;
+}
+
+.benefits--content {
+  border: solid .063rem;
+  border-radius: .5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.benefits--content img {
+  height: 4rem;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.benefits--content h1 {
+  background-image: linear-gradient(90deg, #4d78ef, #709df7, #7ed4fd);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 600;
+}
+
+.benefits--content p {
+  margin-top: .5rem;
+}
