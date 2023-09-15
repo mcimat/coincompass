@@ -14,9 +14,10 @@ function Content() {
   }, []);
 
   return (
+    <section className="market">
     <section className="container">
-      <h1>Crypto Market</h1>
-      <div className="market">
+      <h2>Market</h2>
+      <div className="container--market">
         <ul>
           <li className="header">
             <span>Coin</span>
@@ -37,6 +38,7 @@ function Content() {
           ))}
         </ul>
       </div>
+    </section>
     </section>
   );
 }

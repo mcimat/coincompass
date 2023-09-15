@@ -1,6 +1,7 @@
 import Hero from "./components/hero";
 import Market from "./components/market";
 import Benefits from "./components/benefits";
+import Connect from "./components/connect";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Hero />
       <Market />
       <Benefits />
+      <Connect />
     </div>
   );
 }
