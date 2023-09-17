@@ -15,30 +15,29 @@ function Content() {
 
   return (
     <section className="market">
-    <section className="container">
-      <h2>Market</h2>
-      <div className="container--market">
-        <ul>
-          <li className="header">
-            <span>Coin</span>
-            <span>Price</span>
-            <span>24h Change</span>
-            <span>Capital</span>
-          </li>
-          {cryptoData.map((crypto) => (
-            <li>
-              <span>
-                <img src={crypto.image} alt={crypto.name + " Image"} />
-                <p>{crypto.name}</p>
-              </span>
-              <p>${crypto.current_price}</p>
-              <p>{crypto.price_change_percentage_24h}%</p>
-              <p>${crypto.market_cap}</p>
-            </li>
-          ))}
-        </ul>
+      <div className="container">
+        <div className="market--container">
+        <div className="market--content">
+          <h2 className="h2--color">Buy and sell with the industry's most competitive market</h2>
+          <p>Buy and sell 10,000+ cryptocurrencies using bank transfers or your credit/debit card.</p>
+        </div>
+        <div className="container--market">
+          <ul>
+            {cryptoData.map((crypto) => (
+              <li>
+                <span>
+                  <img src={crypto.image} alt={crypto.name + " Image"} />
+                  <p>{crypto.name}</p>
+                </span>
+                <p>${crypto.current_price}</p>
+                <p>{crypto.price_change_percentage_24h}%</p>
+                <p>${crypto.market_cap}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+        </div>
       </div>
-    </section>
     </section>
   );
 }
