@@ -1,5 +1,5 @@
 function Join() {
-    return(
+    return (
         <section className="join"> 
             <div className="container">
                 <div className="join--container">
