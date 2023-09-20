@@ -47,7 +47,7 @@ function Content() {
                   <p style={{ color: crypto.price_change_percentage_24h >= 1 ? '#50C878' : '#DC143C', }}>
                     {crypto.price_change_percentage_24h}%
                   </p>
-                  <p>${crypto.market_cap}</p>
+                  <p>${(new Intl.NumberFormat().format(crypto.market_cap))}</p>
                 </li>
               ))}
             </ul>
